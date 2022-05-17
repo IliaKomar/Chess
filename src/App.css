@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 224, 236);
+}
+h3 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: gray;
+  margin-bottom: 10px;
+}
+.white-player {
+  background-color: white;
+  border-radius: 3px;
+}
+.black-player {
+  background-color: black;
+  border-radius: 3px;
+}
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black {
+  background-color: deepskyblue;
+}
+.white {
+  background-color: #eed4ac;
+}
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.selected {
+  background-color: brown;
+}
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgb(87, 195, 87);
+}
+.lost-figures-wrapper {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: lightgray;
+}
+.name-with-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figure-name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+.lost-figure-img {
+  width: 20px;
+  height: 20px;
+}
+.risk-cell {
+  background-color: red !important;
+}
+.timer {
+  margin-right: 20px;
+  background-color: aliceblue;
+  width: 150px;
+  height: 200px;
+}
+.restart-button {
+  border: none;
+  padding: 5px;
+  background-color: rgb(154, 154, 154);
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+.winner-message {
+  font-family: 'Courier New', Courier, monospace;
+  color: orange;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(238, 211, 162);
+  margin-top: 20px;
+}
